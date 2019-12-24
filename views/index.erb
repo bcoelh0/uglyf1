@@ -1,0 +1,14 @@
+<div style="text-align:center">
+  <h1>Ugly F1</h1>
+  <br><br>
+  <% @articles.each do |article| %>
+    <a href="<%= article['url'] %>" target="_blank">
+      <img src="<%= article['urlToImage'] %>" style="width: 500px;" />
+      <br>
+      <h2><%= article["title"] %></h2>
+    </a>
+    <br>
+    <hr>
+    <br>
+  <% end %>
+</div>
